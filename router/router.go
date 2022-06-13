@@ -9,15 +9,11 @@ import (
 func InitRouter() *gin.Engine {
 	r := gin.Default()
 
-	// 未加入jwt中间件!!!
-
 	// 主路由
 	douyinGroup := r.Group("/douyin")
 
 	userGroup := douyinGroup.Group("/user")
 	{
-
-		//userGroup.POST("/qjd/", controller.Qjd)
 
 		userGroup.GET("/", controller.UserInfo)
 		userGroup.POST("/login/", controller.UserLogin)
