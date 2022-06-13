@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-var Key = []byte("byte dance 11111 return")
+var Key = []byte("bytedance douyin return")
 
 type DyClaims struct {
 	UserId   uint   `json:"user_id"`
@@ -27,7 +27,7 @@ func CreateToken(userId uint, userName string) (string, error) {
 		StandardClaims: jwt.StandardClaims{
 			ExpiresAt: expireTime.Unix(), //过期时间戳
 			IssuedAt:  NowTime.Unix(),    //当前时间戳
-			Issuer:    "henrik",          //颁发者签名
+			Issuer:    "yezhizhendui",          //颁发者签名
 			Subject:   "userToken",       //主题
 		},
 	}
