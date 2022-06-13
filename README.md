@@ -1,2 +1,5 @@
 # bytedance_SimpleDouyin
 字节跳动青训营-简易版抖音项目（野指针队）
+本地需修改项目的yaml配置文件改为自己数据库的url连接，其次需要修改controller里的filepath设置好video的存储路径。
+除了完成api手册要求实现的接口外需要额外实现videos/filename路由实现对视频文件的读取
+本地需要根据接口要求定义的结构体并根据gorm模型定义完成数据库的搭建
